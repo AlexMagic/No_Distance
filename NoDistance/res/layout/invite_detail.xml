@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	  
+	<LinearLayout
+        android:id="@+id/llayout" 
+        android:orientation="vertical"
+        android:layout_width="match_parent" 
+    	android:layout_height="wrap_content"  >
+    
+		
+	 	<include android:id="@+id/to_place_bar"  layout="@layout/to_place_bar" />
+	
+	</LinearLayout>	
+	
+	<ScrollView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="match_parent"
+	    android:background="@color/white"
+	    android:layout_below="@id/llayout"
+	    android:layout_marginBottom="50dp">
+	
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+	    	android:orientation="vertical">
+		
+		
+			<RelativeLayout android:id="@+id/list_layout"
+		       android:layout_width="fill_parent"
+		       android:layout_height="wrap_content"
+		       >
+		       
+		       <ImageView android:id="@+id/user_head"
+			        android:layout_width="55dp"
+			        android:layout_height="55dp"
+			        android:src="@drawable/btn_entertainment_selector"
+			        android:layout_margin="8dp"/>
+		       
+		        
+			    
+			    <TextView android:id="@+id/tv_place"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="福田区购物公园"
+			        android:layout_toRightOf="@id/user_head"
+			        android:layout_below="@id/tv_username"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="8dip"
+			        android:paddingTop="30dp"
+			        android:paddingBottom="10dp"/>
+			    
+			    
+			    <TextView android:id="@+id/tv_distance"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="(100m)"
+			        android:layout_toRightOf="@id/tv_place"
+			        android:layout_below="@id/tv_username"
+			        android:layout_marginRight="8dip"
+			        android:paddingTop="30dp"
+			        android:paddingBottom="10dp"/>
+			    
+			   
+			    <TextView android:id="@+id/tv_invite"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="附近有小伙伴一起呵呵咖啡聊聊天吗"
+			        android:layout_toRightOf="@id/user_head"
+			        android:layout_below="@id/tv_place"
+			        android:layout_marginLeft="10dp"
+			        android:textColor="@color/black"
+			        android:layout_marginRight="8dip"
+			        android:paddingTop="10dp"
+			        android:paddingBottom="10dp"/>
+			    
+			    <TextView android:id="@+id/tv_invite_time"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="13:00"
+			        android:layout_alignParentRight="true"
+			        android:layout_margin="8dp"/>
+		       
+		   </RelativeLayout>
+		   
+		   
+		   <ImageView
+		       android:layout_width="match_parent"
+		       android:layout_height="13dp"
+		       android:background="#ebebeb"/>
+		   
+		   <LinearLayout android:id="@+id/invite_layout"
+		       android:layout_width="fill_parent"
+		       android:layout_height="fill_parent"
+		       android:orientation="vertical">
+		       
+		       
+		       
+		   </LinearLayout>
+		   
+		    
+	   </LinearLayout>
+   
+   </ScrollView>
+   
+	<LinearLayout
+         android:layout_height="wrap_content" 
+         android:layout_width="match_parent"
+         android:orientation="vertical"
+         android:layout_alignParentBottom="true"
+         android:background="@color/white">
+	
+	     
+	     <Button android:id="@+id/to_send"
+	        android:layout_width="fill_parent"
+	        android:layout_height="50dp"
+	        android:background="@drawable/edit_text_bg"
+	        android:text="申请赴约"
+	        android:textColor="@color/top_bar_normal_bg"/>
+	  
+	</LinearLayout>
+	
+</RelativeLayout>

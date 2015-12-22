@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/news_item_bg">
+    
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    
+	    <ImageView android:id="@+id/user_head"
+	        android:layout_width="35dp"
+	        android:layout_height="35dp"
+	        android:src="@drawable/btn_entertainment_selector"
+	        android:layout_margin="8dp"/>
+    
+    	<TextView android:id="@+id/tv_username"
+    	    android:layout_height="wrap_content"
+    	    android:layout_width="wrap_content"
+    	    android:text="我"
+    	    android:textColor="#2ea3fe"
+    	    android:layout_toRightOf="@id/user_head"
+    	    android:layout_margin="8dp"/>
+	    
+	    <TextView android:id="@+id/tv_temp_place"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="我在："
+	        android:layout_below="@id/tv_username"
+	        android:layout_marginLeft="60dp"
+	        />
+	    
+	    <TextView android:id="@+id/tv_place"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="福田区购物公园"
+	        android:layout_toRightOf="@id/tv_temp_place"
+	        android:layout_below="@id/tv_username"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="8dip"/>
+	    
+	    <TextView android:id="@+id/tv_temp_invite"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="邀约："
+	        android:layout_below="@id/tv_temp_place"
+	        android:layout_marginLeft="60dp"
+	        android:textColor="@color/black"/>
+	    
+	    <TextView android:id="@+id/tv_invite"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="附近有小伙伴一起呵呵咖啡聊聊天吗"
+	        android:layout_toRightOf="@id/tv_temp_invite"
+	        android:layout_below="@id/tv_place"
+	        android:layout_marginLeft="10dp"
+	        android:textColor="@color/black"
+	        android:layout_marginRight="8dip"/>
+	    
+	    <TextView android:id="@+id/tv_invite_time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="13:00"
+	        android:layout_alignParentRight="true"
+	        android:layout_margin="8dp"/>
+	    
+	    
+	    
+	    
+    </RelativeLayout>
+    
+	    <View  
+		       android:layout_width="fill_parent"
+		       android:layout_height="1dip"
+		       android:layout_marginTop="10dp"
+		       android:layout_marginBottom="3dp"
+		       android:background="#20333333"/>
+	    
+	    <com.project.activity.base.GridViewForListView 
+	        android:id="@+id/noScrollgridview"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="5dp"
+	        android:horizontalSpacing="3dp"        
+	        android:numColumns="4"
+	        android:scrollbars="none"
+	        android:verticalSpacing="5dp" >
+	    </com.project.activity.base.GridViewForListView >
+	    
+	    <View  android:id="@+id/temp"
+		       android:layout_width="fill_parent"
+		       android:layout_height="1dip"
+		       android:layout_marginTop="10dp"
+		       android:layout_marginBottom="3dp"
+		       android:background="#20333333"/>
+    
+     	<RelativeLayout
+     	    android:layout_width="fill_parent"
+     	    android:layout_height="fill_parent"
+     	    android:background="@null"
+     	    android:orientation="horizontal" >
+	
+     	    
+     	    
+     	    <ImageView	android:id="@+id/tt1"
+	            android:layout_height="20dp"
+	            android:layout_width="20dp"
+	            android:background="@drawable/chat"
+	            android:layout_alignParentRight="true"
+	            android:layout_margin="10dp"
+	            android:layout_centerVertical="true"/>
+     	    
+     	    <ImageView	android:id="@+id/tt2"
+	            android:layout_height="20dp"
+	            android:layout_width="20dp"
+	            android:background="@drawable/chat2"
+	            android:layout_margin="10dp"
+	            android:layout_centerVertical="true"
+	            android:layout_toLeftOf="@id/tt1"/>
+     	    
+     	</RelativeLayout>
+
+	</LinearLayout>
+	
+   
+
+</LinearLayout>

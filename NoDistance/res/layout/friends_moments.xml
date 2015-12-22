@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <ScrollView 
+        android:id="@+id/m_srcoll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    
+	    <LinearLayout android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent">
+	        
+		    <RelativeLayout android:layout_width="fill_parent"
+		        android:layout_height="wrap_content">
+		        
+		        
+		        <ImageView android:layout_width="fill_parent"
+		            android:layout_height="170dp"
+		            android:background="@drawable/menu_background"/>
+		        
+			        <RelativeLayout android:layout_width="fill_parent"
+			        	android:layout_height="170dp"
+			        	android:gravity="center">
+				        
+				        <ImageView android:id="@+id/m_user_head"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:src="@drawable/btn_entertainment_selector"
+				            android:alpha="0.5"/>
+				        
+				        
+				        <TextView android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="XXXXXXX"
+				            android:textColor="@color/black"
+				            android:layout_below="@id/m_user_head"
+				            android:alpha="0.7"/>
+		        	
+		        	</RelativeLayout>
+		    </RelativeLayout>
+	    
+		
+		    <ListView android:id="@+id/moment_list"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:padding="5dp">
+		        
+		        
+		    </ListView>
+    	
+    	</LinearLayout>
+        
+     </ScrollView>    
+</LinearLayout>

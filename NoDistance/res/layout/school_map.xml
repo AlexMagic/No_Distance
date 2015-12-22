@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical"
+  >
+  
+   <LinearLayout
+        android:id="@+id/llayout" 
+        android:orientation="vertical"
+        android:layout_width="match_parent" 
+    	android:layout_height="wrap_content"  >
+    
+		
+	 	<include android:id="@+id/map_bar"  layout="@layout/school_map_bar" />
+	
+	</LinearLayout>
+
+   <RelativeLayout android:id="@+id/list_layout"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:background="@color/white">
+       
+      <com.handmark.pulltorefresh.library.PullToRefreshListView  
+        android:id="@+id/pull_refresh_list"  
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent"  
+        android:cacheColorHint="#00000000"  
+        android:divider="#19000000"  
+        android:dividerHeight="4dp"  
+        android:fadingEdge="none"  
+        android:fastScrollEnabled="false"  
+        android:footerDividersEnabled="false"  
+        android:headerDividersEnabled="false"  
+        android:smoothScrollbar="true" /> 
+       
+       <ProgressBar android:id="@+id/loading"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           style="?android:attr/progressBarStyleSmall"
+           android:layout_centerInParent="true" />
+       
+   </RelativeLayout>
+  
+</LinearLayout>

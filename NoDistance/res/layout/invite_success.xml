@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:background="@color/white">
+
+	<LinearLayout android:id="@+id/first_layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    >
+	    
+	    <RelativeLayout 
+	        android:layout_width="fill_parent"
+	    	android:layout_height="fill_parent"
+	        android:layout_weight="1">
+	        
+	         <ImageView android:id="@+id/user_head_left"
+		        android:layout_width="35dp"
+		        android:layout_height="35dp"
+		        android:src="@drawable/btn_entertainment_selector"
+		        android:layout_margin="8dp"/>
+	        
+	    </RelativeLayout>
+	    
+	
+	    
+	    <RelativeLayout 
+	        android:layout_width="fill_parent"
+	    	android:layout_height="fill_parent"
+	        android:layout_weight="1">
+	        
+	         <ImageView android:id="@+id/user_head_right"
+		        android:layout_width="35dp"
+		        android:layout_height="35dp"
+		        android:src="@drawable/btn_entertainment_selector"
+		        android:layout_margin="8dp"
+		        android:layout_alignParentRight="true"/>
+	        
+	       
+	         
+	    </RelativeLayout>
+	
+    
+	</LinearLayout>
+	
+	
+	<LinearLayout android:id="@+id/second_layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_below="@id/first_layout">
+	    
+	    <RelativeLayout android:id="@+id/layout1"
+	        android:layout_width="fill_parent"
+	    	android:layout_height="fill_parent"
+	        android:layout_weight="1">
+	        
+	        
+	         <ImageView android:id="@+id/user_left_img"
+		        android:layout_width="120dp"
+		        android:layout_height="200dp"
+		        android:src="@drawable/bg_transparent"
+		        android:layout_centerInParent="true"/>
+	         
+	         
+	    </RelativeLayout>
+	    
+	    <View  
+	       android:layout_width="1dp"
+	       android:layout_height="200dp"
+	       android:layout_marginTop="10dp"
+	       android:layout_marginBottom="10dp"
+	       android:background="#20333333"/>
+	    
+	    
+	    <RelativeLayout 
+	        android:layout_width="fill_parent"
+	    	android:layout_height="fill_parent"
+	        android:layout_weight="1">
+	        
+	        
+	         <ImageView android:id="@+id/user_right_img"
+		        android:layout_width="120dp"
+		        android:layout_height="200dp"
+		        android:src="@drawable/bg_transparent"
+		        android:layout_centerInParent="true"/>
+	         
+	    </RelativeLayout>
+	
+    
+	</LinearLayout>
+
+	
+	<TextView android:id="@+id/tv_position"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="他们在：购物公园"
+	    android:layout_centerHorizontal="true"
+	    android:textColor="#2ea3fe"
+	    android:layout_marginTop="15dp"/>
+	
+	<View android:id="@+id/line"
+       	android:layout_width="fill_parent"
+       	android:layout_height="1dip"
+       	android:background="#20333333"
+       	android:layout_below="@id/second_layout"/>
+	
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_below="@id/line">
+	    
+	    <RelativeLayout 
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	        android:layout_weight="1">
+	        
+	         <TextView android:id="@+id/tv_user1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="qq123:"
+			    android:textColor="#2ea3fe"
+			    android:layout_margin="5dp"/>
+	        
+	         <TextView android:id="@+id/tv_content1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="丰厚的风格和风格和地方共和国的"
+			    android:layout_margin="5dp"
+			    android:layout_below="@id/tv_user1"/>
+	         
+	    </RelativeLayout>
+	    
+		<View  
+	       android:layout_width="1dp"
+	       android:layout_height="wrap_content"
+	       android:layout_marginTop="10dp"
+	       android:layout_marginBottom="10dp"
+	       android:background="#20333333"/>
+	    
+	    <RelativeLayout 
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	        android:layout_weight="1">
+	        
+	         <TextView android:id="@+id/tv_user2"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text=":test111"
+			    android:textColor="#2ea3fe"
+			    android:layout_alignParentRight="true"
+			    android:layout_margin="5dp"/>
+	        
+	        <TextView android:id="@+id/tv_content2"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="啊飒飒大三大萨顶顶大森蝶"
+			    android:layout_margin="5dp"
+			    android:layout_alignParentRight="true"
+			    android:layout_below="@id/tv_user2"/>
+	         
+	    </RelativeLayout>
+	
+    
+	</LinearLayout>
+	
+	
+</RelativeLayout>

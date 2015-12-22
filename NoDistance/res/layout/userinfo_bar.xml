@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+  
+  <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:id="@+id/layout_top">
+
+     <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#2ea3fe"/>
+			
+     
+            <RelativeLayout android:orientation="horizontal"
+	            android:layout_width="fill_parent"
+	            android:layout_height="43dp">
+				
+             
+                <ImageView android:id="@+id/btn_goto_residenmenu"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerVertical="true"
+			        android:layout_marginTop="10dp"
+			        android:layout_marginLeft="11dp"
+			        android:scaleType="centerInside"
+			        android:src="@drawable/mm_title_back" />
+                
+	            <TextView android:id="@+id/test"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:padding="5dp"
+	                    android:text="个人中心"
+	                    android:textSize="13sp"
+	                    android:textColor="#2ea3fe"
+	                    android:layout_gravity="center_vertical"
+	                    android:layout_centerVertical="true" 
+	                    android:layout_toRightOf="@id/btn_goto_residenmenu"/>
+	            
+	            <Button android:id="@+id/other_oper_chat"
+	                android:layout_width="40dp"
+	                android:layout_height="40dp"
+	                android:background="@drawable/commu_popwindow_item_bg"
+	                android:layout_alignParentRight="true"
+	                android:layout_centerVertical="true" />
+	            
+	            <Button android:id="@+id/btn_search_content"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/search_contacts"
+	                android:layout_toLeftOf="@id/other_oper_chat"
+	                android:layout_centerVertical="true"
+	                android:visibility="gone"/>
+	            
+	            <Button android:id="@+id/btn_add_frd"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/app_frd_add_icon"
+	                android:layout_toLeftOf="@id/other_oper_chat"
+	                android:layout_centerVertical="true"
+	                android:visibility="gone"/>
+	            
+	            
+	            
+			</RelativeLayout>
+           
+      <ImageView
+              android:layout_width="match_parent"
+              android:layout_height="2dp"
+              android:background="#ebebeb"/>
+
+    </LinearLayout>
+  
+</LinearLayout>
