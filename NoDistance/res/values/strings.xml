@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, RenRenActivity!</string>
+    <string name="app_name">你·我·Ta</string>
+
+    <string name="location_recv">[%1$s的位置]</string>
+    <string name="location_message">位置信息</string>
+    <string name="recording_video">录制视频</string>
+    <string name="location_prefix">[我的位置]</string>
+    <string name="voice">[语音]</string>
+    <string name="picture">[图片]</string>
+    <string name="video">[视频]</string>
+    <string name="file">[文件]</string>
+    
+    <string name="button_pushtotalk">按住说话</string>
+    <string name="button_send">发送</string>
+    <string name="attach_smile">表情</string>
+    <string name="attach_picture">图片</string>
+    <string name="attach_take_pic">拍照</string>
+    <string name="attach_location">位置</string>
+    
+    <string name="move_up_to_cancel">手指上滑，取消发送</string>
+    
+     <string name="button_cancel">取消</string>
+    <string name="button_save">保存</string>
+    <string name="button_search">查找</string>
+    <string name="button_add">添加</string>
+    <string name="search_header">S</string>
+    
+    <string name="network_isnot_available">网络不可用</string>
+    <string name="recoding_fail">录音失败，请重试！</string>
+    <string name="select_contacts">选择联系人</string>
+    <string name="confirm_forward_to">确定转发到：%1$s ?</string>
+      <string name="logout">退出登录</string>
+    <string name="logout_hint">退出后不会删除任何历史数据，下次登录依然可以使用本账号</string>
+ <string name="exit_group_hint">退出后，将不再接收此群聊信息</string>
+    <string name="dissolution_group_hint">退出后，此群将被解散</string>
+      <string name="exit_group">退出</string>
+      <string name="connect_conflict">同一帐号已在其他设备登录</string>
+      
+      <string name="boy">男</string>
+      <string name="girl">女</string>
+    
+	  <string name="esplain1">单击切换指针模式</string>
+      <string name="esplain2">单击切换地图模式.长按可以清除地图标记。</string>
+      <string name="esplain3">单击发送目前坐标，长按可开启时时发送模式，别人定位你时可以开启，方便会面。</string>
+      <string name="esplain4">单击打开好友坐标列表，选择好友后会在地图显示坐标标记。</string>
+      <string name="esplain5">长按后开启Find模式，之后单击按钮可以打开陌生人列表，进行交友活动。</string>
+      <string name="esplain6">说明：（点击上面打开map）</string>
+      <string name="esplain7">说明：\n为了方便你的测试 ， 在此提供两个测试账号 ： \n 1.用户名 : test111 , 密码 : 111  \n 2.用户名 : \tqq123   , 密码 : 111</string>
+	
+      <string name="pull_to_refresh_pull_label">下拉刷新…</string>
+	  <string name="pull_to_refresh_release_label">放开以刷新…</string>
+	  <string name="pull_to_refresh_refreshing_label">正在载入…</string>
+	  
+	  <string name="title">详情</string>
+	  
+	  <string name="ptr_pull_to_refresh">Pull to refresh</string>
+      <string name="ptr_release_to_refresh">Release to refresh</string>
+      <string name="ptr_refreshing">Refreshing</string>
+      <string name="ptr_last_updated">Updated: %1$s</string>
+      <string name="xlistview_header_hint_normal">下拉刷新</string>
+      <string name="xlistview_header_hint_ready">松开刷新数据</string>
+      <string name="xlistview_header_hint_loading">正在加载...</string>
+      <string name="xlistview_header_last_time">上次更新时间：</string>
+      <string name="xlistview_footer_hint_normal">查看更多</string>
+      <string name="xlistview_footer_hint_ready">松开载入更多</string>
+      
+</resources>

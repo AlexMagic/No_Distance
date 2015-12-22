@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+  
+  <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_top">
+
+     <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#2ea3fe"/>
+			
+     
+            <RelativeLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="43dp">
+				
+             
+                
+	            <TextView android:id="@+id/tv_place"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:padding="5dp"
+	                    android:text="任意门传送"
+	                    android:textSize="13sp"
+	                    android:textColor="#2ea3fe"
+	                    android:layout_gravity="center_vertical"
+	                    android:layout_centerVertical="true" 
+	                    android:layout_toRightOf="@id/btn_goto_residenmenu"/>
+	            
+	          
+	            
+	            <ImageView android:id="@+id/btn_goto_residenmenu"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerVertical="true"
+			        android:layout_marginTop="10dp"
+			        android:layout_marginLeft="11dp"
+			        android:scaleType="centerInside"
+			        android:src="@drawable/mm_title_back" />
+	            
+	            
+	            <Button android:id="@+id/send"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerVertical="true"
+			        android:layout_alignParentRight="true"
+			        android:layout_marginTop="10dp"
+			        android:layout_marginRight="20dp"
+			        android:layout_marginLeft="11dp"
+			        android:scaleType="centerInside"
+			        android:text="发送"/>
+	            
+			</RelativeLayout>
+           
+      <ImageView
+              android:layout_width="match_parent"
+              android:layout_height="2dp"
+              android:background="#ebebeb"/>
+
+    </LinearLayout>
+  
+</LinearLayout>

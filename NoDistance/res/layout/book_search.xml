@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="校园图书 ， 随时找"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+    	
+    	<LinearLayout android:id="@+id/input_layout"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:focusable="true"
+             android:focusableInTouchMode="true"
+             android:orientation="horizontal" 
+             android:background="@drawable/book_search_bg" >
+	
+    	    
+    	    
+			<RelativeLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="48dip">
+	    
+	    
+			    <EditText android:id="@+id/search_book_edit"
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"
+			        android:drawableLeft="@drawable/book_search_icon"
+			        android:background="@drawable/edittext_bg"
+			        android:layout_centerInParent="true"
+			        android:layout_margin="8dip"
+			        android:textSize="12sp"
+			        android:paddingRight="30dip"
+			        android:hint="输入书名... "/>
+		   
+			    
+			     <Button
+			            android:id="@+id/btn_search_result"
+			            android:layout_width="60dip"
+			            android:layout_height="35dp"
+			            android:layout_marginTop="1dp"
+			            android:layout_margin="6dip"
+			            android:text="搜索"
+			            android:textColor="#ff005092"
+			            android:textSize="14sp" 
+			            android:layout_alignParentRight="true"
+			            android:layout_centerInParent="true"/>
+		    
+		    	<ImageButton
+		                android:id="@+id/book_searchclear"
+		                android:layout_width="30dip"
+		                android:layout_height="30dip"
+		                android:layout_centerInParent="true"
+		                android:layout_toLeftOf="@id/btn_search_result"
+		                android:background="#00000000"
+		                android:paddingRight="8dip"
+		                android:src="@drawable/search_clear_icon_bg"
+		                android:visibility="invisible"/>
+    
+			   
+			    
+    		</RelativeLayout>
+		</LinearLayout>
+        
+        
+        <ListView android:id="@+id/book_list"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:listSelector="@android:color/transparent"
+            android:layout_below="@id/input_layout"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/list_divier">
+            
+        </ListView>
+        
+        
+        <ProgressBar android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+        
+</RelativeLayout>

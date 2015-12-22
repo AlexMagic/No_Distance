@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:gravity="center"
+  android:background="@android:color/white"
+  android:orientation="vertical"
+  >
+  
+  
+  <Button android:id="@+id/btn_school_map"
+      android:layout_width="150sp"
+      android:layout_height="wrap_content"
+      android:background="@drawable/titlebar_background"
+      android:text="校园Map"/>
+  
+  <Button android:id="@+id/btn_server"
+      android:layout_width="150sp"
+      android:layout_height="wrap_content"
+      android:background="@drawable/titlebar_background"
+      android:text="校内服务"/>
+  
+  <Button android:id="@+id/btn_communication"
+      android:layout_width="150sp"
+      android:layout_height="wrap_content"
+      android:background="@drawable/titlebar_background"
+      android:text="社交圈"/>
+  
+  <Button android:id="@+id/btn_entertainment"
+      android:layout_width="150sp"
+      android:layout_height="wrap_content"
+      android:background="@drawable/titlebar_background"
+      android:text="娱乐生活"/>
+  
+  <Button android:id="@+id/btn_settings"
+      android:layout_width="150sp"
+      android:layout_height="wrap_content"
+      android:background="@drawable/titlebar_background"
+      android:text="设置"/>
+  
+
+</LinearLayout>

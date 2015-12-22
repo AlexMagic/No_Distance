@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="DefaultLocale" severity="ignore" />
+    <issue id="HandlerLeak">
+        <ignore path="src/com/project/maps/DriftBottleAdapter.java" />
+    </issue>
+    <issue id="ShowToast">
+        <ignore path="src/com/project/maps/WriteBottleActivity.java" />
+    </issue>
+    <issue id="UseSparseArrays" severity="ignore" />
+</lint>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp">
+
+    
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="@color/galy"
+        >
+    
+	    <ImageView android:id="@+id/academy_logo"
+	        android:layout_width="50dp"
+	        android:layout_height="50dp"
+	        android:src="@drawable/btn_school_service_selector"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="5dp"/>
+        
+	    <TextView android:id="@+id/academy_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="计算机工程学院"
+	        android:layout_toRightOf="@id/academy_logo"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginLeft="10dp"
+	        android:textSize="14sp"
+	        android:textColor="@color/popupwindow_text_color"/>
+	    
+	    <TextView android:id="@+id/academy_news"
+	        android:layout_width="200dp"
+	        android:layout_height="wrap_content"
+	        android:text="	哈哈哈哈哈哈哈哈哈哈哈哈哈....哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈....哈哈哈哈哈哈哈哈哈哈哈哈哈哈"
+	        android:layout_below="@id/academy_name"
+	        android:layout_marginLeft="60dp"
+	        android:maxLines="2"
+	        android:layout_marginTop="10dp"/>
+	    
+	    <TextView android:id="@+id/publish_time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="7月7日"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginTop="5dp"/>
+	    
+    </RelativeLayout>
+	   
+</LinearLayout>

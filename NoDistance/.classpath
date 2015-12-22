@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="lib" path="F:/阿里云/aliyun_OSS_Android_SDK_0.3.0_20150123/OSS_Android_SDK/oss-0.3.0.jar"/>
+	<classpathentry kind="lib" path="F:/阿里云/aliyun_OSS_Android_SDK_0.3.0_20150123/OSS_Android_SDK/oss-0.3.0-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/Android源码/Android-Universal-Image-Loader-master/downloads/universal-image-loader-1.9.3.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+	<translate
+		android:fromXDelta="0.0"
+		android:toXDelta="200.0%"
+		android:interpolator="@android:anim/decelerate_interpolator"
+		android:duration="500" />
+	
+	<alpha 
+	    android:duration="300"
+	    android:fillAfter="true"
+	    android:fillEnabled="true"
+	    android:fromAlpha="1.0"
+	    android:toAlpha="0.0" />
+	
+	</set>
+<!-- 
+fromXDelta,fromYDelta起始时X，Y座标,屏幕右下角的座标是X:320,Y:480
+toXDelta，toYDelta动画结束时X,Y的座标
+ -->

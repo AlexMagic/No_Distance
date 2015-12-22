@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f2f0eb">
+    
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/top_bar_normal_bg"
+        android:gravity="center_vertical" >
+
+        <ImageView	android:id="@+id/img_back"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="11dp"
+	        android:scaleType="centerInside"
+	        android:src="@drawable/mm_title_back" />
+
+        <TextView
+            android:id="@+id/book_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/more_oper"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <ImageView android:id="@+id/iv_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="9dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/open_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="180dp"
+	            android:layout_height="wrap_content"
+	            android:layout_centerInParent="true">
+        
+	       <TextView
+	            android:id="@+id/name_on_bar"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerInParent="true"
+	            android:textColor="#ffffff"
+	            android:textSize="20sp" 
+	            android:text="引爆点"
+	            android:singleLine="true"/>
+    
+       
+       </RelativeLayout>
+    </RelativeLayout>
+    
+    
+    <RelativeLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/top_bar"
+        android:layout_marginRight="12dp">
+        
+         <ImageView android:id="@+id/iv_keep_book"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/keep_book_ico" 
+                android:layout_marginTop="15dp"
+                android:visibility="gone"/>
+         
+          <ImageView android:id="@+id/iv_remind"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/remind_icon" 
+                android:layout_below="@id/iv_keep_book"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"/>
+          
+    </RelativeLayout>
+    
+    
+    <LinearLayout android:id="@+id/book_index_layout"
+	        android:layout_width="230dp"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical" 
+		    android:layout_below="@id/top_bar"
+		    android:layout_margin="10dp">
+	    
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" 
+		    android:layout_margin="3dp">    
+        
+        
+	        <TextView android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="索书号：  "
+	            android:textColor="#2ea3fe"
+	            android:textSize="15sp"/>
+	        
+	        <TextView android:id="@+id/tv_bookindex"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="  C916.6/G275-4 "
+	            android:textSize="14sp"
+	            android:textColor="#2ea3fe"/>
+	        
+	    </LinearLayout>
+	      
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical" 
+		    android:layout_margin="3dp">
+	    
+	        <TextView android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="所在位置：  "
+	            android:textColor="#2ea3fe"
+	            android:textSize="15sp"/>
+	        
+	        <TextView android:id="@+id/tv_booklocation"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="  "
+	            android:textSize="16sp"
+	            android:textColor="#2ea3fe"
+	            android:layout_gravity="center"/>
+	    
+	    </LinearLayout>
+	    
+	    
+	    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="近期评论： "
+        android:textSize="22sp"
+        android:layout_below="@id/tv_booklocation"/>
+	</LinearLayout>
+    
+    
+    <ListView android:id="@+id/comment_list"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:divider="@drawable/list_divier"
+	        android:cacheColorHint="#00000000"
+	        android:listSelector="@android:color/transparent"
+	        android:layout_marginTop="2dp"
+	        android:layout_below="@id/book_index_layout"
+	        android:focusable="true">
+	        
+	</ListView>
+	
+    <Button android:id="@+id/to_send"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_text_bg"
+        android:layout_alignParentBottom="true"
+        android:text="点击开始评论"
+        android:textColor="@color/top_bar_normal_bg"
+        android:layout_centerHorizontal="true"
+        android:focusable="true"/>
+    
+    <LinearLayout
+        android:id="@+id/bar_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingBottom="2dip"
+        android:paddingTop="2dip" 
+        android:visibility="gone">
+	    
+        <LinearLayout
+            android:id="@+id/rl_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#aaffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp" >
+
+
+
+            <RelativeLayout
+                android:id="@+id/edittext_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_bg" >
+
+                <EditText
+                    android:id="@+id/et_sendmessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="35dip"
+                    android:background="@null"
+                    android:maxLines="3"
+                    android:minHeight="40dp"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:hint="开始评论：" >
+                </EditText>
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="54dp"
+                android:layout_height="39dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/chat_send_btn_selector"
+                android:onClick="onClick"
+                android:text="@string/button_send"
+                android:textColor="#fff"
+                android:textSize="16sp"/>
+        </LinearLayout>
+	</LinearLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+  
+  <LinearLayout
+      android:id="@+id/layout_top"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:orientation="vertical" >
+
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="2dp"
+          android:background="#2ea3fe" />
+
+      <RelativeLayout
+          android:layout_width="fill_parent"
+          android:layout_height="43dp"
+          android:layout_weight="1"
+          android:orientation="horizontal" >
+
+           <ImageView android:id="@+id/btn_goto_residenmenu"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerVertical="true"
+			        android:layout_marginLeft="11dp"
+			        android:scaleType="centerInside"
+			        android:src="@drawable/mm_title_back" />
+
+          <TextView
+              android:id="@+id/test"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_toRightOf="@id/btn_goto_residenmenu"
+              android:padding="5dp"
+              android:text="娱乐0距离"
+              android:textColor="#2ea3fe"
+              android:layout_gravity="center_vertical"
+	          android:layout_centerVertical="true" 
+              android:textSize="13sp" />
+
+          <LinearLayout
+              android:id="@+id/tab_layout"
+              android:layout_width="100dp"
+              android:layout_height="25dp"
+              android:layout_centerInParent="true"
+              android:layout_marginLeft="150dp"
+              android:layout_marginTop="2dp"
+              android:background="@drawable/tab_selected"
+              android:orientation="horizontal" >
+
+              <Button
+                  android:id="@+id/school_entert"
+                  android:layout_width="50dp"
+                  android:layout_height="25dp"
+                  android:background="@drawable/tab_selected_pressed"
+                  android:text="校园活动"
+                  android:textColor="@color/black"
+                  android:textSize="10sp" />
+
+              <Button
+                  android:id="@+id/near_entert"
+                  android:layout_width="50dp"
+                  android:layout_height="25dp"
+                  android:background="@android:color/transparent"
+                  android:text="校外娱乐"
+                  android:textColor="@color/black"
+                  android:textSize="10sp" />
+          </LinearLayout>
+      </RelativeLayout>
+
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="2dp"
+          android:layout_weight="1"
+          android:background="#ebebeb" />
+  </LinearLayout>
+  
+</LinearLayout>

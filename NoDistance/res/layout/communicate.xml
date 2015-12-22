@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+
+    <include android:id="@+id/layout_chat_bar" layout="@layout/commu_bar"/>
+    
+    <FrameLayout  android:id="@+id/commu_layout"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:layout_below="@id/layout_chat_bar">
+        
+       
+        
+    </FrameLayout>
+    
+    
+</RelativeLayout>
+  
